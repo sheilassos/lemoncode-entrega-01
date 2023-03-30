@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de usuario</title>
+    <!-- // H O J A   D E   E S T I L O // -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <!-- // P Á G I N A // -->
+    <main class="main-container">
+        <div class="img">
+            <img id="img-file" src="https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg" alt="Imagen de usuario">
+        </div>
+        <div class="data">
+            <label class="name" for="name">Nombre</label>
+            <input type="text" id="name"/>
+
+            <label class="lastname" for="lastname">Apellido</label>
+            <input type="text" id="lastname"/>
+
+            <div id="action">
+                <button class="action-button" type="button"
+                onclick="console.log(document.getElementById('name').value + ' ' +
+                document.getElementById('lastname').value);
+                document.getElementById('img-file').src ='./img/sheila.jpg'">
+                Acceder</button>
+            <!--
+            // C O M E N T A R I O //
+            Quería que el botón realizara más
+            acciones cuando se aplicara "onclick".
+            Realiza las acciones que quiero,
+            pero no sé si el código es correcto.
+            -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- // J A V A S C R I P T // -->
+    <script src="./js/demo.js"></script>
+</body>
+</html>
